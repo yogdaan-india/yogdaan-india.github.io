@@ -1,4 +1,5 @@
 const form = document.querySelector('#add-query');
+
 // saving Data
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -11,3 +12,4 @@ form.addEventListener('submit', (e) => {
     form.City.value = '';
     form.Phone.value = '';
 })
+
