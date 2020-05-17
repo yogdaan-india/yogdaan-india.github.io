@@ -1,26 +1,68 @@
 <!DOCTYPE html>
 <html>
-<title> Yogdaan </title>
-<meta charset="UTF-8">
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
-body, html {height: 100%}
-.bgimg {
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 660px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h1{
+    text-align: center;
+    color:rgb(36, 113, 136);
+    font-family: 'Times New Roman', Times, serif;
+}
+button {
+    width: max-width ;
+    margin-left: 210px;
+}
+button:hover{
+    background-color:rgba(197, 130, 164, 0.2);
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+}
+h2 {
+    margin-left: 120px;
+    font-family: 'Times New Roman', Times, serif;
 }
 </style>
-<body background="1.jpg">
+</head>
+<body>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">Yogdaan</h1>
-    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">2 days left</p>
+<h1>Yogdaan</h1>
+
+<div class="row">
+  <div class="column" style="background-color:rgb(36, 113, 136);">
+    <img src="images/give.jpg" alt="Yogdaan" class="centre" style="width: 30%;">
+    <h2>If you wish to help people from your home</h2><br>
+    <button type="button" class="btn btn-success">Get Location</button>
+    <button type="button" class="btn btn-warning">Cancel Location</button>
+  </div>
+  <div class="column" style="background-color:rgb(59, 148, 136);">
+    <img src="images/india.jpg" alt="Yogdaan" class="centre" style="width: 30%;">
+    <h2>If you wish to help people who live near you</h2>
+    <button type="button" class="btn btn-primary">Download App</button>
   </div>
 </div>
 
