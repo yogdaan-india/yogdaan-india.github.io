@@ -1,120 +1,45 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<style>
-* {
-  box-sizing: border-box;
-}
+<!DOCTYPE HTML>
+<HTML>
+  <HEAD>
+    <TITLE>  Yogdaan  </TITLE>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="mine.css">
+    <link rel="stylesheet" href="black.css">
+    <link rel="stylesheet" href="another.css">
+  </HEAD>
+  <BODY bgcolor="teal">
+    <!-- Header -->
+    <header class="w3-container w3-theme w3-padding-64" id="myHeader" style=min-height:500px>
+      <!-- <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> -->
+      <div class="w3-center w3-padding-64">
+      <h1 style=font-size:80px;> Yogdaan </h1>
+      <h1 class="w3-animate-bottom w3-padding" style=font-size:30px;> Connecting people how needs help to people who can provide some!!  </h1>
+      </div>
+    </header>
 
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 660px;
-}
+    <div class="w3-row-padding w3-center w3-margin-top">
+    <div class="w3-half">
+    <div class="w3-half"><p></p></div>
+    <div class="w3-half">
+      <div class="w3-card w3-container w3-theme-l5 w3-padding-64">
+      <h1>Want to Provide help</h1><br>
+      <p>  Option 1 </p>
+      <p>  Option 2 </p>
+      </div>
+    </div>
+    </div>
+    <div class="w3-half">
+    <div class="w3-half">
+      <div class="w3-card w3-container w3-theme-l5 w3-padding-64">
+      <h1>Need some help</h1><br>
+      <p>  Option 1 </p>
+      <p>  Option 2 </p>
+      </div>
+    </div>
+    <div class="w3-half"><p></p></div>
+    </div>
+    </div>
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-h1{
-    text-align: center;
-    color:rgb(36, 113, 136);
-    font-family: 'Times New Roman', Times, serif;
-}
-button {
-    width: max-width ;
-    margin-left: 210px;
-}
-button:hover{
-    background-color:rgba(197, 130, 164, 0.2);
-}
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 90px;
-}
-h2 {
-    margin-left: 120px;
-    font-family: 'Times New Roman', Times, serif;
-}
-</style>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!--Firebase-->
-  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
-  <style>
-a:link {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:visited {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:active {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-</style>
-</head>
-<body>
-
-<h1>Yogdaan</h1>
-
-<div class="row">
-  <div class="column" style="background-color:rgb(36, 113, 136);">
-    <img src="images/give.jpg" alt="Yogdaan" class="centre" style="width: 30%;">
-    <h2>If you wish to help people from your home</h2><br>
-    <button type="button" class="btn btn-success" onclick="getLocation()">Get Location</button>
-    <button type="button" class="btn btn-warning">Cancel Location</button>
-  </div>
-  <div class="column" style="background-color:rgb(59, 148, 136);">
-    <img src="images/india.jpg" alt="Yogdaan" class="centre" style="width: 30%;">
-    <h2>If you wish to help people who live near you</h2>
-    <button type="button" class="btn btn-primary"><a href="https://www.google.com">Download App </a></button>
-  </div>
-</div>
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    		apiKey: "AIzaSyBYBjuyi4QRtxsr7kIG2GcdAPcusfkS2bw",
-    		authDomain: "yogdaan-63e49.firebaseapp.com",
-    		databaseURL: "https://yogdaan-63e49.firebaseio.com",
-    		projectId: "yogdaan-63e49",
-    		storageBucket: "yogdaan-63e49.appspot.com",
-    		messagingSenderId: "1053095630027",
-    		appId: "1:1053095630027:web:e1f38a1e40a3ef56b5f74e",
-    		measurementId: "G-LQK2Z9C6BN"
-  			};
-  		// Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        const db = firebase.firestore();
-        db.settings({ timestampsInSnapshots: true });
-</script>
-
-<script src="app2.js"></script>
-
-</body>
-</html>
+  </BODY>
+</HTML>
