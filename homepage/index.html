@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="mine.css">
     <link rel="stylesheet" href="black.css">
     <link rel="stylesheet" href="another.css">
+    <style>
+      #smallscreen{
+        display: none;
+      }
+    @media only screen and (max-width: 600px){
+      #largescreen{
+        display: none;
+      }
+      #smallscreen{
+        display:block!important;
+      }
+    }
+    </style>
   </HEAD>
   <BODY bgcolor="teal">
     <!-- Header -->
@@ -18,27 +31,45 @@
       </div>
     </header>
 
-    <div class="w3-row-padding w3-center w3-margin-top">
-    <div class="w3-half">
-    <div class="w3-half"><p></p></div>
-    <div class="w3-half">
-      <div class="w3-card w3-container w3-theme-l5 w3-padding-64">
-      <h1>Want to Provide help</h1><br>
-      <p>  Option 1 </p>
-      <p>  Option 2 </p>
+    <div class="w3-row-padding w3-center w3-margin-top" id="largescreen">
+      <div class="w3-half">
+          <div class="w3-half"><p></p></div>
+          <div class="w3-half">
+            <div class="w3-card w3-container w3-theme-l5 w3-padding-64">
+            <h1>Want to Provide help</h1><br>
+            <p>  Option 1 </p>
+            <p>  Option 2 </p>
+            </div>
+          </div>
+      </div>
+      <div class="w3-half">
+          <div class="w3-half">
+            <div class="w3-card w3-container w3-theme-l5 w3-padding-64">
+            <h1>Need some help</h1><br>
+            <p>  Option 1 </p>
+            <p>  Option 2 </p>
+            </div>
+          </div>
+          <div class="w3-half"><p></p></div>
       </div>
     </div>
-    </div>
-    <div class="w3-half">
-    <div class="w3-half">
-      <div class="w3-card w3-container w3-theme-l5 w3-padding-64">
-      <h1>Need some help</h1><br>
-      <p>  Option 1 </p>
-      <p>  Option 2 </p>
-      </div>
-    </div>
-    <div class="w3-half"><p></p></div>
-    </div>
+
+
+    <div class="w3-row-padding w3-center w3-margin-top" id="smallscreen">
+      <div class="w3-half">
+        <div class="w3-card w3-container w3-theme-l5 w3-padding-64">
+        <h1>Want to Provide help</h1><br>
+        <p>  sOption 1 </p>
+        <p>  sOption 2 </p>
+        </div>
+        <p></p>
+        <div class="w3-half">
+          <div class="w3-card w3-container w3-theme-l5 w3-padding-64">
+          <h1>Need some help</h1><br>
+          <p>  sOption 1 </p>
+          <p>  sOption 2 </p>
+          </div>
+        </div>
     </div>
 
   </BODY>
