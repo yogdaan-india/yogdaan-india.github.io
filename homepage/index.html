@@ -22,55 +22,86 @@
     </style>
   </HEAD>
   <BODY bgcolor="teal">
+
     <!-- Header -->
-    <header class="w3-container w3-theme w3-padding-64" id="myHeader" style=min-height:500px>
-      <!-- <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> -->
+    <header class="w3-container w3-theme w3-padding-64" id="myHeader" style=min-height:300px>
       <div class="w3-center w3-padding-64">
-      <h1 style=font-size:80px;> Yogdaan </h1>
-      <h1 class="w3-animate-bottom w3-padding" style=font-size:30px;> Connecting people how needs help to people who can provide some!!  </h1>
+      <h1 style=font-size:80px; class="w3-text-green"> Yogdaan </h1>
+      <h1 class="w3-animate-bottom w3-padding" style=font-size:30px;> Connecting people who needs help to people who can provide some!!  </h1>
       </div>
     </header>
 
+    <!-- help for large screen -->
     <div class="w3-row-padding w3-center w3-margin-top" id="largescreen">
-      <div class="w3-half">
-          <div class="w3-half"><p></p></div>
-          <div class="w3-half">
-            <div class="w3-card w3-container w3-theme-l5 w3-padding-64">
-            <h1>Want to Provide help</h1><br>
-            <p>  Option 1 </p>
-            <p>  Option 2 </p>
-            </div>
-          </div>
+      <div class="w3-quarter"><p></p></div>
+      <div class="w3-quarter">
+
+        <div class="w3-card w3-container w3-theme-l5 w3-padding-64" id="leftd">
+          <h1>I require help</h1><br>
+          <button class="w3-btn w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('leftd').style.display='none';
+                                                                           document.getElementById('left').style.display='block';
+                                                                           document.getElementById('right').style.display='none';
+                                                                           document.getElementById('rightd').style.display='block';" style="font-weight:900;"> Fill the form </button>
+        </div>
+
+        <div class="w3-card w3-container w3-theme-l5 w3-padding-64" id="left" style="display:none">
+          <h1>  Choose one of the options  </h1><br>
+          <button class="w3-btn w3-teal w3-text-black w3-hover-text-white w3-hover-black" onclick="document.getElementById('1').style.display='block';" style="font-weight:900;"> I need food at my home </button><br><br>
+          <button class="w3-btn w3-teal w3-text-black w3-hover-text-white w3-hover-black" onclick="document.getElementById('1').style.display='block';" style="font-weight:900;"> I can travel for supplies </button>
+        </div>
+
       </div>
-      <div class="w3-half">
-          <div class="w3-half">
-            <div class="w3-card w3-container w3-theme-l5 w3-padding-64">
-            <h1>Need some help</h1><br>
-            <p>  Option 1 </p>
-            <p>  Option 2 </p>
-            </div>
-          </div>
-          <div class="w3-half"><p></p></div>
+      <div class="w3-quarter">
+
+        <div class="w3-card w3-container w3-theme-l5 w3-padding-64" id="rightd">
+          <h1>I want to provide help</h1><br>
+          <button class="w3-btn w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('left').style.display='none';
+                                                                           document.getElementById('leftd').style.display='block';
+                                                                           document.getElementById('rightd').style.display='none';
+                                                                           document.getElementById('right').style.display='block';" style="font-weight:900;"> Fill the form </button>
+        </div>
+
+        <div class="w3-card w3-container w3-theme-l5 w3-padding-64" id="right" style="display:none">
+          <h1>  Choose one of the options  </h1><br>
+          <button class="w3-btn w3-teal w3-text-black w3-hover-text-white w3-hover-black" onclick="document.getElementById('1').style.display='block';" style="font-weight:900;"> Provide Supplies from one place </button><br><br>
+          <button class="w3-btn w3-teal w3-text-black w3-hover-text-white w3-hover-black" onclick="document.getElementById('1').style.display='block';" style="font-weight:900;"> Travel with supplies to people </button>
+        </div>
+
       </div>
     </div>
 
 
     <div class="w3-row-padding w3-center w3-margin-top" id="smallscreen">
-      <div class="w3-half">
-        <div class="w3-card w3-container w3-theme-l5 w3-padding-64">
-        <h1>Want to Provide help</h1><br>
-        <p>  sOption 1 </p>
-        <p>  sOption 2 </p>
+      <div class="w3-third">
+          <div class="w3-card w3-container w3-theme-l5 w3-padding-64" id="sleftd">
+            <h1>I require help</h1><br>
+            <button class="w3-btn w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('sleftd').style.display='none';
+                                                                             document.getElementById('sleft').style.display='block';
+                                                                             document.getElementById('sright').style.display='none';
+                                                                             document.getElementById('srightd').style.display='block';" style="font-weight:900;"> Fill the form </button>
+          </div>
+          <div class="w3-card w3-container w3-theme-l5 w3-padding-64" id="sleft" style="display:none">
+            <h1>  Choose one of the options  </h1><br>
+            <button class="w3-btn w3-teal w3-text-black w3-hover-text-white w3-hover-black" onclick="document.getElementById('1').style.display='block';" style="font-weight:900;"> I need food at my home </button><br><br>
+            <button class="w3-btn w3-teal w3-text-black w3-hover-text-white w3-hover-black" onclick="document.getElementById('1').style.display='block';" style="font-weight:900;"> I can travel for supplies </button>
+          </div>
         </div>
-        <p></p>
-        <div class="w3-half">
-          <div class="w3-card w3-container w3-theme-l5 w3-padding-64">
-          <h1>Need some help</h1><br>
-          <p>  sOption 1 </p>
-          <p>  sOption 2 </p>
+        <div class="w3-third"><p></p></div>
+        <div class="w3-third">
+          <div class="w3-card w3-container w3-theme-l5 w3-padding-64" id="srightd">
+            <h1>I want to provide help</h1><br>
+            <button class="w3-btn w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('sleft').style.display='none';
+                                                                             document.getElementById('sleftd').style.display='block';
+                                                                             document.getElementById('srightd').style.display='none';
+                                                                             document.getElementById('sright').style.display='block';" style="font-weight:900;"> Fill the form </button>
+          </div>
+          <div class="w3-card w3-container w3-theme-l5 w3-padding-64" id="sright" style="display:none">
+            <h1>  Choose one of the options  </h1><br>
+            <button class="w3-btn w3-teal w3-text-black w3-hover-text-white w3-hover-black" onclick="document.getElementById('1').style.display='block';" style="font-weight:900;"> Provide Supplies from one place </button><br><br>
+            <button class="w3-btn w3-teal w3-text-black w3-hover-text-white w3-hover-black" onclick="document.getElementById('1').style.display='block';" style="font-weight:900;"> Travel with supplies to people </button>
           </div>
         </div>
     </div>
-
+<br><br><br><br><br>
   </BODY>
 </HTML>
