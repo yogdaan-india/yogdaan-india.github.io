@@ -1,7 +1,7 @@
 //Location Finder
 async function s() {
     await new Promise(r => setTimeout(r, 3700));
-    document.getElementById('id01').style.display='block'
+    document.getElementById('id01').style.display='block';
 }
 function getLocation() {
   if (navigator.geolocation) {
